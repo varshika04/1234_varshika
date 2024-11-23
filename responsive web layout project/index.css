@@ -1,0 +1,56 @@
+. {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 140px auto auto auto;
+  grid-template-rows: 120px auto 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+.header{
+  grid-column:1/5 ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgrey;
+  padding: 1.8rem;
+}
+.footer{
+  grid-column: 1/5;
+  text-align: center;
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+}
+.main{
+  grid-column: 2/5;
+  background-color: gainsboro;
+  padding: 20px;
+  overflow: auto;
+}
+.list{
+  grid-column: 1/2;
+  background-color: rgb(45, 185, 138);
+  padding-left: 0.55rem;
+  padding-top: 1rem;
+}
+.list div{
+  cursor: pointer;
+  width: 120px; 
+  height: 40px;
+}
+.list div a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.list div a:hover{
+  color: black;
+}
